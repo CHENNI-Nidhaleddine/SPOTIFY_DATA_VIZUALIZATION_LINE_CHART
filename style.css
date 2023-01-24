@@ -3,22 +3,38 @@
     font-family: 'Montserrat', sans-serif;
     
 }
-header{
-    font-weight: bold;
-    font-size: large;
-}
 body {
-    max-height: 97vh;
+    max-height: 90vh;
     display: flex;
     justify-items:center;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    background: #F5F5DC;
     font-size: 14px;
-
 }
-
+.main{
+    max-height: 97vh;
+    width: 100%;
+    display: flex;
+    justify-items:center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.titre{
+    font-size: medium;
+}
+#diagramMain{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 97vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    margin: auto;
+}
 #diagram{
     display: flex;
     width: 98%;
@@ -26,40 +42,52 @@ body {
     margin: auto;
     justify-content: center;
     align-items: center;
-    border: solid 1px black;
-    margin: 2%;
 }
-footer{
-  
+
+.choixmain{
+    height: 75vh;
 }
 .divchoix1{
+    display: flex;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    margin: 3%;
+}
+.divchoix1 p
+{
+  font-weight: bold;
+
+}
+.divchoix2{
+    position: relative;
+    margin-top: 8%;
     display: flex;
     justify-content: center;
     justify-items: center;
     justify-items: center;
     text-align: center;
 }
-.divchoix1 p
-{
-  font-weight: bold;
-}
-.divchoix2{
-    position: relative;
-    left: -47px;
-    /* display: flex;
-    justify-content: center;
-    justify-items: center;
-    justify-items: center;
-    text-align: center; */
-}
 .choix{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin-left: 10px;
     margin-right: 20px;
     font-size: 14px;
     font-weight: normal;
+    width: 15vw;
+}
+.choixX{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.choixY{
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 .zoom {
     cursor: move;
@@ -70,29 +98,29 @@ footer{
 
 .line1 {
     fill: none;
-    stroke: #2c7bb6;
+    stroke: #488f31;
     stroke-width: 3;
 }
 
 .line2 {
     fill: none;
-    stroke: #fdae61;
+    stroke: #A5A73F;
     stroke-width: 3;
 }
 
 .line3 {
     fill: none;
-    stroke: #d7191c;
+    stroke: #f4bd6a;
     stroke-width: 3;
 }
 .line4 {
     fill: none;
-    stroke: #19d748;
+    stroke: #eb8050;
     stroke-width: 3;
 }
 .line5 {
     fill: none;
-    stroke: #c4d719;
+    stroke: #d43d51;
     stroke-width: 3;
 }
 
@@ -106,9 +134,6 @@ footer{
     stroke: #000;
     shape-rendering: crispEdges;
 }
-
-
-
 .context .line {
     stroke-width: 0.5px;
 }

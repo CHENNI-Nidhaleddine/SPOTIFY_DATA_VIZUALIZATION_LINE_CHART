@@ -11,11 +11,11 @@ function parse_data(data) {
   for (var k in data) {
     var elem = data[k];
     date1.push(k);
-    series1[0].values.push(parseInt(elem.song1)/1000000);
-    series1[1].values.push(parseInt(elem.song2)/1000000);
-    series1[2].values.push(parseInt(elem.song3)/1000000);
-    series1[3].values.push(parseInt(elem.song4)/1000000);
-    series1[4].values.push(parseInt(elem.song5)/1000000);
+    series1[0].values.push(parseInt(elem.song1) / 1000000);
+    series1[1].values.push(parseInt(elem.song2) / 1000000);
+    series1[2].values.push(parseInt(elem.song3) / 1000000);
+    series1[3].values.push(parseInt(elem.song4) / 1000000);
+    series1[4].values.push(parseInt(elem.song5) / 1000000);
   }
 
   let data2 = {
@@ -27,10 +27,10 @@ function parse_data(data) {
 }
 function get_data(i) {
   if (i == 1) {
-    let data1=[];
-    for (let i=0;i<20;i++){
-      let obj={
-        Year:1800+2*i,
+    let data1 = [];
+    for (let i = 0; i < 20; i++) {
+      let obj = {
+        Year: 1800 + 2 * i,
         var1: Math.floor(Math.random() * 20),
         var2: Math.floor(Math.random() * 30),
         var3: Math.floor(Math.random() * 10),

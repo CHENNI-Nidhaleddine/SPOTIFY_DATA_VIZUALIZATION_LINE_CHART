@@ -1,5 +1,5 @@
 let songs=['Shape of You','Despacito','Something Just Like This','HUMBLE.','Unforgettable']
-let vars=['A','B','C','D','E']
+let vars=['var A','var B','var C',' var D','var E']
 
 document.getElementById("alea").addEventListener("click", function (event) {
   var data = get_data(1);
@@ -261,7 +261,7 @@ function draw_diagram(data, fisheye) {
     .attr(
       "transform",
       "translate(" +
-        5+
+        700+
         "," +
         (+svg.attr("height") - margin3.bottom + 20) +
         ")"
@@ -286,7 +286,7 @@ function draw_diagram(data, fisheye) {
       .datum(list_[d.name])
       .append("g")
       .attr("transform", function (d) {
-        return "translate(0," + i * 20 + ")";
+        return "translate(0," + i * 13 + ")";
       })
       .attr("class", "legend" + i + "")
       .on("mouseover", (d) => mouseover(d, i))
@@ -296,26 +296,29 @@ function draw_diagram(data, fisheye) {
 
     legendItem
       .append("rect")
-      .attr("width", 18)
-      .attr("height", 18)
-    
+      .attr("width", 12)
+      .attr("height", 12)
+      .attr("x", 40)
+      .attr("y", -20)
+      // .attr("position",relative)
+      // .attr("zIndex",99)
       .attr("fill", function (d) {
         let color;
         switch (i) {
           case 0:
-            color = "#2c7bb6";
+            color = "#488F31";
             break;
           case 1:
-            color = "#fdae61";
+            color = "#A5A73F";
             break;
           case 2:
-            color = "#d7191c";
+            color = "#F4BD6A";
             break;
           case 3:
-              color = "#19d748";
+              color = "#EB8050";
               break;
           case 4:
-                color = "#c4d719";
+                color = "#D43D51";
             break;
         }
         return color;
@@ -323,8 +326,8 @@ function draw_diagram(data, fisheye) {
 
     legendItem
       .append("text")
-      .attr("x", 18)
-      .attr("y", 13)
+      .attr("x", 60)
+      .attr("y", -10)
       .text(function (d) {
         return d;
       });
